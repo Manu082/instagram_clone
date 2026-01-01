@@ -1,0 +1,191 @@
+/* General Page Background */
+.stApp { 
+    background-color: #fafafa; 
+}
+
+/* Hide default Streamlit elements */
+header, footer { 
+    visibility: hidden; 
+}
+
+/* Main Wrapper to center the entire frame on the screen */
+.main-wrapper, .signup-wrapper {
+    max-width: 350px; /* Exact Instagram frame width */
+    margin: 0 auto;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The Framed Cards (Login and Signup) */
+.login-card, .signup-card {
+    background-color: white;
+    border: 1px solid #dbdbdb;
+    padding: 20px 40px 30px 40px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%; /* Spans the width of the wrapper */
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.signup-card {
+    padding: 20px;
+    font-size: 14px;
+    display: block; /* For standard text centering */
+}
+
+/* Registration Header text */
+.signup-header {
+    color: #8e8e8e; 
+    text-align: center; 
+    font-size: 17px; 
+    font-weight: 600; 
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+/* Fallback Logo Styling */
+.logo-text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields - Compact, Small Font, and Consistent Padding */
+input {
+    background-color: #fafafa !important;
+    border: 1px solid #dbdbdb !important;
+    font-size: 12px !important; 
+    padding: 9px !important;    
+    border-radius: 3px !important; 
+    margin-bottom: 2px !important;
+}
+
+/* General input margin for registration fields */
+.stTextInput {
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+/* --- THE PRIMARY BUTTON FIX (Official Instagram Blue) --- */
+div.stButton > button {
+    background-color: #0095f6 !important; 
+    color: white !important;              
+    border: none !important;
+    font-weight: bold !important;
+    height: 32px !important;      /* Compact height for IG style */
+    font-size: 14px !important;   
+    border-radius: 8px !important;
+    margin-top: 10px !important;
+    opacity: 1 !important;               
+    visibility: visible !important;
+    width: 100% !important;
+}
+
+div.stButton > button:hover {
+    background-color: #1877f2 !important;
+}
+
+/* Ensure secondary buttons (like Facebook on signup) match the style */
+button[key="fb_signup"] {
+    background-color: #0095f6 !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+/* Eye icon button for Password visibility */
+button[kind="secondary"] { 
+    border: none !important; 
+    background-color: transparent !important; 
+}
+
+/* Shapey Collage Image Corners */
+.collage-container img { 
+    border-radius: 24px; 
+}
+
+/* OR Separator Logic with horizontal lines */
+.separator-container { 
+    display: flex; 
+    align-items: center; 
+    margin: 15px 0; 
+    width: 100%; 
+}
+
+.line { 
+    flex-grow: 1; 
+    height: 1px; 
+    background-color: #dbdbdb; 
+}
+
+.or-text { 
+    margin: 0 15px; 
+    color: #8e8e8e; 
+    font-size: 13px; 
+    font-weight: bold; 
+}
+
+/* Disclaimer text styles for the Signup page */
+.disclaimer-text {
+    color: #8e8e8e; 
+    font-size: 12px; 
+    text-align: center; 
+    margin-top: 10px;
+    line-height: 16px;
+}
+
+/* Links & Facebook Section */
+.fb-container { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    margin-top: 10px; 
+    cursor: pointer; 
+}
+
+.fb-login { 
+    color: #385185; 
+    font-weight: bold; 
+    font-size: 14px; 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.forgot-pass { 
+    color: #00376b; 
+    font-size: 12px; 
+    margin-top: 20px; 
+    cursor: pointer; 
+}
+
+.signup-link { 
+    color: #0095f6; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+/* Home Feed Navigation Bar (For the redirected page) */
+.navbar { 
+    background-color: white; 
+    border-bottom: 1px solid #dbdbdb; 
+    padding: 15px; 
+    font-weight: bold; 
+    font-size: 24px; 
+    text-align: center; 
+    font-family: sans-serif; 
+}
+
+/* Footer Section for copyright and meta links */
+.footer { 
+    text-align: center; 
+    color: #8e8e8e; 
+    font-size: 12px; 
+    margin-top: 50px; 
+    padding-bottom: 40px; 
+    line-height: 2; 
+}
